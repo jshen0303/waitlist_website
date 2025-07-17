@@ -1,0 +1,60 @@
+.about-section {
+    padding: 4rem 2rem;
+    color: white;
+    background: #0a0a0a;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .team-card {
+    background: #111;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .team-photo {
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .team-role {
+    font-weight: bold;
+    color: var(--accent-light);
+    margin: 0.5rem 0;
+  }
+  
+  .team-bio {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+  
+  .linkedin-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+  }
+  
