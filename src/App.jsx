@@ -1,19 +1,18 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
 import Footer from './components/Footer';
-import Waitlist from './components/Waitlist';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 
-
-// assembles page sections
 function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Features />
-      <Waitlist />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
       <Footer />
     </>
   );

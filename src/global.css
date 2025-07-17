@@ -39,11 +39,6 @@ a { color: var(--accent-light); text-decoration: none; }
 }
 .btn:hover { background: var(--accent-light); }
 
-/* header */
-header { display:flex; justify-content:space-between; align-items:center; padding:1.25rem 0; }
-nav a { margin-left: 1.25rem; font-weight: 500; }
-nav a:hover { color: #fff; }
-
 /* hero */
 .hero { text-align:center; padding:6rem 0 4rem; position:relative; }
 .hero h1 { font-size:3rem; line-height:1.1; margin:0 0 1rem; }
@@ -64,4 +59,109 @@ footer { text-align:center; padding:2rem 0 4rem; color:var(--text-secondary); fo
 
 html {
   scroll-behavior: smooth;
+}
+
+/* ---------- HEADER STYLES ---------- */
+
+/* header wrapper */
+.header {
+  padding: 1rem 2rem;          /* keeps everything off the screen edge */
+}
+
+/* three‑piece flex row */
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* header sections */
+.header-section {
+  display: flex;
+  align-items: center;
+}
+
+/* logo (left) */
+.header-logo {
+  flex: 1 0 0;                 /* equal width section */
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* nav (centre) */
+.header-nav {
+  flex: 1 0 0;                 /* equal width section */
+  display: flex;
+  justify-content: center;     /* centres its own content */
+}
+
+/* CTA button (right) */
+.header-cta {
+  flex: 1 0 0;                 /* equal width section */
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ---------- HEADER CONTENTS ---------- */
+
+/* logo text */
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background: linear-gradient(to right, #ea9944, #e9e6eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* nav links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 500;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.nav-link.active {
+  color: var(--accent);
+}
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-light);
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+/* CTA pill */
+button.btn {
+  all: unset;
+  cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  background: var(--accent-light);
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+button.btn:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
 }

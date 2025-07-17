@@ -10,6 +10,7 @@ const items = [
 function Features() {
   return (
     <section id="features" className="features container">
+      <h1 style={{textAlign:'center', fontSize:'2rem', marginBottom:'2rem'}}>Insert some random images</h1>
       <h2 style={{textAlign:'center', fontSize:'2rem', marginBottom:'2rem'}}>why X?</h2>
       <div className="grid">
         {items.map((f) => (
