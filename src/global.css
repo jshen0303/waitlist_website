@@ -61,3 +61,7 @@ nav a:hover { color: #fff; }
 
 /* footer */
 footer { text-align:center; padding:2rem 0 4rem; color:var(--text-secondary); font-size:0.875rem; }
+
+html {
+  scroll-behavior: smooth;
+}
