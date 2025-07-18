@@ -4,6 +4,7 @@ const items = [
   { title: 'text', copy: '123' },
   { title: 'text', copy: '123' },
   { title: 'text', copy: '123' },
+  { title: 'text', copy: '123' },
 ];
 
 // renders three feature cards
