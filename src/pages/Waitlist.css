@@ -57,3 +57,11 @@
     background-color: #eee;
   }
   
+  .success-msg {
+    color: var(--accent-light);
+    margin-top: 1rem;
+  }
+  .error-msg {
+    color: red;
+    margin-top: 1rem;
+  }
